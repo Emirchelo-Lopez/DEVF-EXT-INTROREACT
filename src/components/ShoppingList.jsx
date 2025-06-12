@@ -1,5 +1,10 @@
 import { useState } from "react";
 
+// Pistas para completar el código
+// La función eliminarProducto debe actualizar el estado filtrando el producto correspondiente.
+// Usa setProductos con el método .filter() para excluir el producto seleccionado de la lista.
+// Asegúrate de pasar el índice correcto en la función onClick.
+
 export default function ShoppingList() {
   // Define state for the shopping list
   const [products, setProducts] = useState([]);
@@ -16,6 +21,15 @@ export default function ShoppingList() {
   // Function to remove a product from the list
   const removeProduct = (index) => {
     // Complete the logic to remove a product
+    const filteredProducts = [];
+
+    products.forEach((prod, i) => {
+      if (i !== index) {
+        filteredProducts.push(prod);
+      }
+    });
+
+    setProducts(filteredProducts);
   };
 
   return (
