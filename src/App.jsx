@@ -1,10 +1,9 @@
-import Card from "./components/Card";
+import ShoppingList from "./components/ShoppingList";
 
 export default function App() {
   return (
     <>
-      <h1>Card presentation</h1>
-      <Card />
+      <ShoppingList />
     </>
   );
 }
