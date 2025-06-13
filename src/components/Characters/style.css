@@ -1,0 +1,7 @@
+.characted-card {
+  transition: transform 0.5s ease-in-out;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}

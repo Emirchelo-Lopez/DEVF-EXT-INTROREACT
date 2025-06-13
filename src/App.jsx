@@ -82,12 +82,7 @@ export default function App() {
           />
         </div>
       ) : (
-        // <Characters />
-        <ul>
-          {characters.map((character) => (
-            <li key={character.id}>{character.name}</li>
-          ))}
-        </ul>
+        <Characters characters={characters} darkMode={darkMode} />
       )}
     </>
   );
