@@ -1,12 +1,71 @@
-# React + Vite
+# Intro to React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Intro to React** repository!  
+This repo is designed to support all lesson activities, practice sessions, and projects presented in the "Intro to React" module.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these steps to run any lesson or project in this repository:
 
-## Expanding the ESLint configuration
+### 1. Install Node.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Make sure you have Node.js installed:
+
+```bash
+node --version
+```
+
+If you see a version number, you're good to go!  
+If not, [download Node.js here](https://nodejs.org/).
+
+---
+
+### 2. Install Dependencies
+
+Open a terminal in your project folder and run:
+
+```bash
+npm install
+```
+
+This will install all required packages.
+
+---
+
+### 3. Copy the Desired `src` Folder
+
+To run a specific lesson or project:
+
+- Find the `src` folder for that lesson or project.
+- Copy it into the root of your repository, replacing the existing `src` folder.
+
+---
+
+### 4. Start the Development Server
+
+Run:
+
+```bash
+npm run dev
+```
+
+This will start the Vite development server.
+
+---
+
+### 5. Open in Your Browser
+
+After starting the server, the terminal will display a local address (e.g., `http://localhost:5173`).  
+Open this address in your web browser to view your React app.
+
+---
+
+#### **Quick Summary**
+
+1. Install Node.js
+2. Run `npm install`
+3. Copy the desired `src` folder to the root
+4. Run `npm run dev`
+5. Open the shown URL in your browser
+
+Happy coding!
