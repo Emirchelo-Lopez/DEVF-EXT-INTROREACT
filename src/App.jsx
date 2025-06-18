@@ -1,5 +1,5 @@
-import React from "react";
 // 1. You will need to import the ContactList component here.
+import ContactList from "./components/ContactList";
 import "./App.css";
 
 // This is our source of data.
@@ -30,6 +30,7 @@ export default function App() {
       <h1>My Contact List</h1>
       {/* 2. Render the ContactList component here. */}
       {/* How do you pass the `contactData` array to it as a prop? */}
+      <ContactList contacts={contactData} />
     </div>
   );
 }
