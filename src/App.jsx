@@ -1,36 +1,46 @@
-// 1. You will need to import the ContactList component here.
-import ContactList from "./components/ContactList";
+// 1. Import the ProductList component.
+import ProductList from "./components/ProductList";
 import "./App.css";
 
-// This is our source of data.
-const contactData = [
+// The data source for our application.
+const productData = [
   {
-    id: 1,
-    name: "John Doe",
-    email: "john.doe@example.com",
-    phone: "123-456-7890",
+    id: "p1",
+    name: "Wireless Headphones",
+    description: "High-fidelity sound and 24-hour battery life.",
+    price: 149.99,
   },
   {
-    id: 2,
-    name: "Jane Smith",
-    email: "jane.smith@example.com",
-    phone: "234-567-8901",
+    id: "p2",
+    name: "Mechanical Keyboard",
+    description: "RGB backlit keyboard with custom switches.",
+    price: 119.5,
   },
   {
-    id: 3,
-    name: "Peter Jones",
-    email: "peter.jones@example.com",
-    phone: "345-678-9012",
+    id: "p3",
+    name: "4K Monitor",
+    description: "A 27-inch monitor with stunning color accuracy.",
+    price: 399.0,
+  },
+  {
+    id: "p4",
+    name: "Ergonomic Mouse",
+    description: "Designed for comfort and long hours of use.",
+    price: 79.99,
   },
 ];
 
 export default function App() {
   return (
     <div className="App">
-      <h1>My Contact List</h1>
-      {/* 2. Render the ContactList component here. */}
-      {/* How do you pass the `contactData` array to it as a prop? */}
-      <ContactList contacts={contactData} />
+      <header className="app-header">
+        <h1>Our Awesome Products</h1>
+      </header>
+      <main>
+        {/* 2. Render the ProductList component here. */}
+        {/* You need to pass the `productData` array to it as a prop. */}
+        <ProductList products={productData} />
+      </main>
     </div>
   );
 }
