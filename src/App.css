@@ -1,24 +1,5 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-  padding: 2rem;
-  min-height: 100vh;
-  transition: all 0.3s;
-}
-
-.dark {
-  background-color: #282c34;
-  color: white;
-}
-
-.light {
-  background-color: #f1f1f1;
-  color: #282c34;
-}
-
-button {
-  padding: 10px 20px;
-  border: 1px solid;
-  font-size: 1rem;
-  cursor: pointer;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
