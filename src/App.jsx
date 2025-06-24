@@ -1,22 +1,10 @@
-import { useState } from "react";
-import GuessPokemon from "./components/GuessPokemon";
-import "./App.css";
+import React from "react";
+import UserDashboard from "./components/UserDashboard";
 
-function App() {
-  const [showGame, setShowGame] = useState(false);
+export default function App() {
   return (
-    <>
-      <div className="text-center mt-4">
-        <button
-          className="btn btn-danger mb3"
-          onClick={() => setShowGame(!showGame)}
-        >
-          {showGame ? "Ocultar juego" : "Mostrar juego"}
-        </button>
-        {showGame && <GuessPokemon />}
-      </div>
-    </>
+    <div>
+      <UserDashboard />
+    </div>
   );
 }
-
-export default App;
