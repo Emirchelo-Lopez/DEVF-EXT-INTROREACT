@@ -1,10 +1,5 @@
-import React from "react";
-import UserDashboard from "./components/UserDashboard";
+const App = () => {
+  return <div>App</div>;
+};
 
-export default function App() {
-  return (
-    <div>
-      <UserDashboard />
-    </div>
-  );
-}
+export default App;
