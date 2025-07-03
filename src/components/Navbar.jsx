@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 const Navbar = () => {
+  const { user, logout } = useAuth();
+
   return (
     <nav className="bg-blue-600 text-white p-4 flex justify-between">
       <div className="space-x-4">
         <Link to="/">Home</Link>
-        <Link to="/login">Log In</Link>
-        <Link to="/signup">Sign Up</Link>
+        {!user && <Link to="/login">Log In</Link>}
+        {!user && <Link to="/signup">Sign Up</Link>}
       </div>
-      <button>Log Out</button>
+      {user && <button onClick={logout}>Log Out</button>}
     </nav>
   );
 };
