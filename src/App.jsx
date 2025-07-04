@@ -1,14 +1,8 @@
-import Navbar from "./components/Navbar";
-import AppRoutes from "./routes/AppRoutes";
-import { AuthProvider } from "./context/AuthContext";
+// To run lesson practices from Campus or another project,
+// copy the "src" folder from that project and replace this "src" folder.
 
 const App = () => {
-  return (
-    <AuthProvider>
-      <Navbar />
-      <AppRoutes />
-    </AuthProvider>
-  );
+  return <div>App</div>;
 };
 
 export default App;
